@@ -1,5 +1,13 @@
 *{}
 
+.show {
+  display: block !important;
+}
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
 .jumbotron{
 	background-color: rgba(255,255,255,0);
 	color:rgb(123,166,145);
@@ -16,7 +24,7 @@ div{}
 
 #img-col{
 	background-color: rgba(255,255,255,0.7);
-	height:500px;
+	height:600px;
 	padding: 20px;
 	margin:15px;
 }
@@ -29,11 +37,14 @@ div{}
 	color:rgb(46,48,67);
 	font-weight: bold;
 }
+.itemIMG{
+	height:80px;
+}
 
 
 #centercol{
 	background-color: rgba(255,255,255,0.7);
-	height:500px;
+	height:600px;
 	padding: 20px;
 	margin:15px;
 }
@@ -47,7 +58,7 @@ div{}
 
 #panel-col{
 	background-color: rgba(255,255,255,0.7);
-	height:500px;
+	height:600px;
 	padding: 20px;
 	margin:15px;
 }
