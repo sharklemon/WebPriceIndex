@@ -17,6 +17,8 @@
 	<!-- local js -->
 	<script type="text/javascript" src="assets/javascript/ap.js">
 	</script>
+	<!--D3-->
+	<script src=“https://d3js.org/d3.v4.min.js“></script>
 
 </head>
 <body>
@@ -24,15 +26,15 @@
 <div class="container">
 		<!-- Jumbotron with Title -->
 	<div class="jumbotron">
-		<h1 class="text-center" id="JTtitle"><strong>S.Mart</strong></h1>
-		<h3 id="catchphrase">Simplified online shopping to save <glyphicon glyphicon-time>and<glyphicon glyphicon-piggy-bank></h3>
+		<h1 class="text-center" id="JTtitle">S.Mart</h1>
+		<h3 id="catchphrase" class="text-center">Simplified online shopping to save  <span class="glyphicon glyphicon-time"></span>  and <span class="glyphicon glyphicon-piggy-bank"></span></h3>
 		<p id="lastUpdate"></p>
 	</div> <!-- jumbotron class -->
-
-	<div class="row text-center"><!-- main div -->
+	
+	<div class="row text-center" id="maincolsrow"><!-- main div -->
 		<div class="col-lg-2" id="img-col"><!--column for images-->
-		    <div class="panel panel-success">
-		    	<div class="panel-heading">Items in your basket</div>
+		    <div class="panel panel-default" id="image-panel">
+		    	<div class="panel-heading" id="image-panel-heading">Items in your basket</div>
   				<div class="panel-body">
     			<img class="itemIMG" id="item1" src="https://www.organicfacts.net/wp-content/uploads/2013/05/Banana3-1020x765.jpg" width="100px">
   				</div>
@@ -40,15 +42,15 @@
 		</div><!--column for images-->    	    
 	    <div class="col-lg-4" id="centercol"><!--column for center buttons--> 
 	    <button class="btn btn-default" id="price-check">Upate Basket Prices</button>
-	    <button class="btn btn-default basket" id="Amazon-cent-btn">Current Amazon Basket Total: $$</button>
-	    <button class="btn btn-default basket" id="Walmart-cent-btn">Current Walmart Basket Total: $$</button>
+	    <button class="btn btn-default basket" id="Amazon-cent-btn"><h3>Amazon</h3><br>Current Basket Total: $$</button>
+	    <button class="btn btn-default basket" id="Walmart-cent-btn"><h3>Walmart</h3><br>Current Basket Total: $$</button>
 	    </div><!--column for center buttons--> 
-	    <div class="col-lg-6" id="panel-col"><!--column for full price panels--> 
+	    <div class="col-lg-5" id="panel-col"><!--column for full price panels--> 
 			<div class="panel panel-info" id="breakdown-default"><!--panel for breakdown default--> 
 		    	<div class="panel-heading">See Price Breakown Here</div>
   				<div class="panel-body">
 	    			<h2>Click on one of the basket buttons to see the full price breakdown for that site!</h2>
-	    			<glyphicon glyphicon-arrow-left>
+	    			<span class="glyphicon glyphicon-arrow-left" style="font-size: 5em"></span>
   				</div>
 		    </div><!--panel for breakdown default--> 
 		    <div class="panel panel-info" id="breakdown-Amazon"><!--panel for breakdown AMAZON--> 
@@ -93,8 +95,8 @@
 					</table>
   				</div>		    	
 		    </div><!--panel for breakdown default-->     
-		</div><!--column for full price panels--> 
-
+		</div><!--column for full price panels--> 	
+	</div>
 
 	<footer class="footer text-right">
     <p>&copy; Anastasia Mark 2017</p>
