@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>WebPriceIndex</title>
+
+
+	<!-- Bootstrap File -->
+	<link rel="stylesheet" href="https://bootswatch.com/cosmo/bootstrap.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Vollkorn:400,900" rel="stylesheet"> 	
+
+	<!-- JQuery -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<!-- Firebase Reference -->
+	<script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+	<!-- local js -->
+	<script type="text/javascript" src="assets/javascript/ap.js">
+	</script>
+
+</head>
+<body>
+	
+<div class="container">
+		<!-- Jumbotron with Title -->
+	<div class="jumbotron">
+		<h1 class="text-center" id="JTtitle"><strong>S.Mart</strong></h1>
+		<h3 id="catchphrase">Simplified online shopping to save <glyphicon glyphicon-time>and<glyphicon glyphicon-piggy-bank></h3>
+		<p id="lastUpdate"></p>
+	</div> <!-- jumbotron class -->
+
+	<div class="row text-center"><!-- main div -->
+		<div class="col-lg-2" id="img-col"><!--column for images-->
+		    <div class="panel panel-success">
+		    	<div class="panel-heading">Items in your basket</div>
+  				<div class="panel-body">
+    			<img class="itemIMG" id="item1" src="https://www.organicfacts.net/wp-content/uploads/2013/05/Banana3-1020x765.jpg" width="100px">
+  				</div>
+		    </div>
+		</div><!--column for images-->    	    
+	    <div class="col-lg-4" id="centercol"><!--column for center buttons--> 
+	    <button class="btn btn-default" id="price-check">Upate Basket Prices</button>
+	    <button class="btn btn-default basket" id="Amazon-cent-btn">Current Amazon Basket Total: $$</button>
+	    <button class="btn btn-default basket" id="Walmart-cent-btn">Current Walmart Basket Total: $$</button>
+	    </div><!--column for center buttons--> 
+	    <div class="col-lg-6" id="panel-col"><!--column for full price panels--> 
+			<div class="panel panel-info" id="breakdown-default"><!--panel for breakdown default--> 
+		    	<div class="panel-heading">See Price Breakown Here</div>
+  				<div class="panel-body">
+	    			<h2>Click on one of the basket buttons to see the full price breakdown for that site!</h2>
+	    			<glyphicon glyphicon-arrow-left>
+  				</div>
+		    </div><!--panel for breakdown default--> 
+		    <div class="panel panel-info" id="breakdown-Amazon"><!--panel for breakdown AMAZON--> 
+		    	<div class="panel-heading">Price for each item at Amazon.com</div>
+  				<div class="panel-body">
+					<table class="table table-striped" id="Amazontable">
+						<thead>
+							<tr>
+								<th>Item</th>
+								<th>Price</th>
+								<th>Cheapest?</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Banana</td>
+								<td>$2.00</td>
+								<td>YES!</td>
+							</tr>
+						</tbody>
+					</table>
+  				</div>
+		    </div><!--panel for breakdown Amazon--> 
+		    <div class="panel panel-info" id="breakdown-Walmart"><!--panel for breakdown Walmart--> 
+		    	<div class="panel-heading">Price for each item at Walmart.com</div>
+  				<div class="panel-body">
+					<table class="table table-striped" id="Walmarttable">
+						<thead>
+							<tr>
+								<th>Item</th>
+								<th>Price</th>
+								<th>Cheapest?</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Banana</td>
+								<td>$2.00</td>
+								<td>No!</td>
+							</tr>
+						</tbody>
+					</table>
+  				</div>		    	
+		    </div><!--panel for breakdown default-->     
+		</div><!--column for full price panels--> 
+
+
+	<footer class="footer text-right">
+    <p>&copy; Anastasia Mark 2017</p>
+    </footer>
+
+
+
+</body>
+</html>
