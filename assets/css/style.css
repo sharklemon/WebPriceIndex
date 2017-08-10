@@ -1,0 +1,63 @@
+*{}
+
+.jumbotron{
+	background-color: rgba(255,255,255,0);
+	color:rgb(123,166,145);
+	padding: 10px;
+}
+
+#maincolsrow{
+	background-color: 0;
+    background-image: url('../images/background.jpg');
+    background-size: 100%;
+}
+
+div{}
+
+#img-col{
+	background-color: rgba(255,255,255,0.7);
+	height:500px;
+	padding: 20px;
+	margin:15px;
+}
+
+#image-panel{
+	border-color: rgb(250,208,252);
+}
+#image-panel-heading{
+	background-color: rgb(250,208,252);
+	color:rgb(46,48,67);
+	font-weight: bold;
+}
+
+
+#centercol{
+	background-color: rgba(255,255,255,0.7);
+	height:500px;
+	padding: 20px;
+	margin:15px;
+}
+
+.basket{
+	background-color: rgb(123,166,145);
+	padding: 20px;
+	border: 0;
+	margin:20px;
+}
+
+#panel-col{
+	background-color: rgba(255,255,255,0.7);
+	height:500px;
+	padding: 20px;
+	margin:15px;
+}
+
+.axis path {
+            fill: none;
+            stroke: #777;
+            shape-rendering: crispEdges;
+        }
+        .axis text {
+            font-family: Lato;
+            font-size: 13px;
+        }
